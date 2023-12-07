@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resultado da Previsão</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='resultado.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Raça: {{ predicted_class }}</h1>
+    <img src="{{ image_url }}" alt="Imagem prevista" />
+  </body>
+</html>

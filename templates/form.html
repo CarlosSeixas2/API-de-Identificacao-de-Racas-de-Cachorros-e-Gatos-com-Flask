@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Raças</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='form.css') }}"
+    />
+  </head>
+
+  <body>
+    <form action="/upload" enctype="multipart/form-data" method="post">
+      <label>Coloque a foto do Seu Pet Aqui:</label>
+      <input type="file" id="myfile" name="file" />
+      <p><input type="submit" value="Enviar" /></p>
+    </form>
+  </body>
+</html>
