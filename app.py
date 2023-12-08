@@ -43,10 +43,11 @@ classename =  {
     34: 'Yorkshire Terrier'
 }
 
+print('load model....')
+model = load_model('./classificador.h5')
+
 def get_class_name(class_number):
     return classename.get(class_number, "Classe não encontrada")
-
-model = load_model('./classificador.h5')
 
 app = Flask(__name__, template_folder='templates')
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'upload')
