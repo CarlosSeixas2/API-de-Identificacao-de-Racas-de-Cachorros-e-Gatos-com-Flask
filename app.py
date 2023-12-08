@@ -86,4 +86,5 @@ def get_image(filename):
     return send_file(file, mimetype='image/jpg')
 
 if __name__ == '__main__':
-    app.run(port=5000, host='localhost', debug = True) 
+    app.run(port=5000, host='localhost', debug=True, threaded=True, 
+            use_reloader=False, **{'request_timeout': 120})
